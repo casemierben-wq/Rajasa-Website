@@ -1,0 +1,29 @@
+<!doctype html><html lang='id'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Contact Us | Rajasa Bersama Indonesia</title><link rel='stylesheet' href='styles.css'></head><body>
+<header class="header container">
+  <div class="logo">
+    <img src="images/logo.png" alt="Rajasa Logo">
+    <div><div style="font-weight:700;color:var(--green)">Rajasa Bersama Indonesia</div>
+    <div style="font-size:13px;color:var(--muted)">Raja Serat Alam, Berkah Semesta Alam</div></div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a>
+    <a href="legality.html">Legality</a><a href="contact.html">Contact</a>
+    <div class="lang"><button id="btn-id" class="active">ID</button><button id="btn-en">EN</button></div>
+  </nav>
+</header>
+<section class='section container'><h1>Contact Us / Hubungi Kami</h1>
+<div class='grid-2'><div class='card'><h2>Kontak Utama</h2><p><strong>Ahmad Wibowo</strong><br>📞 +62-833-4332-0332</p><p><strong>Beni Barus</strong><br>📞 +62-8522-6161-803</p></div>
+<div class='card'><h2>Sosial Media</h2><p>Instagram: <a href='https://instagram.com/rajasabersamaindonesia' target='_blank'>@rajasabersamaindonesia</a></p>
+<p>Alamat: Perum Asli Permai Blok P-21, RT.07/RW.05, Kramatan, Wonosobo, Jawa Tengah</p></div></div></section>
+<footer class="footer">© 2025 Rajasa Bersama Indonesia. All rights reserved. | Natural Fiber Solutions</footer>
+<script>
+const btnId=document.getElementById('btn-id'),btnEn=document.getElementById('btn-en');
+function showID(){document.querySelectorAll('[id$="-en"]').forEach(n=>n.style.display='none');
+document.querySelectorAll('[id$="-id"]').forEach(n=>n.style.display='block');
+btnId.classList.add('active');btnEn.classList.remove('active');}
+function showEN(){document.querySelectorAll('[id$="-id"]').forEach(n=>n.style.display='none');
+document.querySelectorAll('[id$="-en"]').forEach(n=>n.style.display='block');
+btnEn.classList.add('active');btnId.classList.remove('active');}
+btnId.addEventListener('click',showID);btnEn.addEventListener('click',showEN);showID();
+</script>
+</body></html>

@@ -1,0 +1,27 @@
+<!doctype html><html lang='id'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Our Legality | Rajasa Bersama Indonesia</title><link rel='stylesheet' href='styles.css'></head><body>
+<header class="header container">
+  <div class="logo">
+    <img src="images/logo.png" alt="Rajasa Logo">
+    <div><div style="font-weight:700;color:var(--green)">Rajasa Bersama Indonesia</div>
+    <div style="font-size:13px;color:var(--muted)">Raja Serat Alam, Berkah Semesta Alam</div></div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a>
+    <a href="legality.html">Legality</a><a href="contact.html">Contact</a>
+    <div class="lang"><button id="btn-id" class="active">ID</button><button id="btn-en">EN</button></div>
+  </nav>
+</header>
+<section class='section container'><h1>Our Legality / Legalitas Perusahaan</h1>
+<div class='card'><ul><li>SK KEMENKUMHAM: AHU-0007678.AH.01.01.TAHUN 2024</li><li>NIB: 03.691.092.5-533.000</li><li>NPWP: 2701240013614</li><li>Akta Pendirian: INDAH FITRININGRUM, S.H., M.Kn (27 Januari 2024)</li></ul></div></section>
+<footer class="footer">© 2025 Rajasa Bersama Indonesia. All rights reserved. | Natural Fiber Solutions</footer>
+<script>
+const btnId=document.getElementById('btn-id'),btnEn=document.getElementById('btn-en');
+function showID(){document.querySelectorAll('[id$="-en"]').forEach(n=>n.style.display='none');
+document.querySelectorAll('[id$="-id"]').forEach(n=>n.style.display='block');
+btnId.classList.add('active');btnEn.classList.remove('active');}
+function showEN(){document.querySelectorAll('[id$="-id"]').forEach(n=>n.style.display='none');
+document.querySelectorAll('[id$="-en"]').forEach(n=>n.style.display='block');
+btnEn.classList.add('active');btnId.classList.remove('active');}
+btnId.addEventListener('click',showID);btnEn.addEventListener('click',showEN);showID();
+</script>
+</body></html>
